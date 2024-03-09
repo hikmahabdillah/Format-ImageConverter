@@ -1,11 +1,14 @@
 @mixin content {
   main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     section.content {
+      gap: 15px;
       display: flex;
       flex-direction: column;
-      gap: 15px;
-      text-align: center;
       align-items: center;
+      text-align: center;
       margin-top: 50px;
       h1 {
         font-size: 3em;
@@ -24,6 +27,32 @@
         font-weight: 500;
         color: #c3c3c3;
         opacity: 0.5;
+      }
+    }
+    section.form-upload {
+      margin-top: 50px;
+      .upload {
+        border-radius: 40px;
+        border: 3px solid #00a9ff;
+        box-shadow: 0 0 50px #00aaff80;
+        backdrop-filter: blur(30px);
+        background-color: #1e1e1e33;
+        width: 800px;
+        height: 300px;
+        position: relative;
+        h3.btn-convert {
+          cursor: pointer;
+          background-color: #00a9ff;
+          color: #f7f7f7;
+          font-weight: 500;
+          font-size: 1em;
+          padding: 15px 35px;
+          border-radius: 5px;
+          margin-bottom: -25px;
+          position: absolute;
+          bottom: 0;
+          left: calc(50% - 100px);
+        }
       }
     }
   }

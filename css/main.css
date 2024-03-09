@@ -49,12 +49,17 @@ header nav .services h2:last-child {
   border-radius: 8px;
 }
 
-main section.content {
+main {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  text-align: center;
   align-items: center;
+}
+main section.content {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin-top: 50px;
 }
 main section.content h1 {
@@ -70,4 +75,30 @@ main section.content p {
   font-weight: 500;
   color: #c3c3c3;
   opacity: 0.5;
+}
+main section.form-upload {
+  margin-top: 50px;
+}
+main section.form-upload .upload {
+  border-radius: 40px;
+  border: 3px solid #00a9ff;
+  box-shadow: 0 0 50px rgba(0, 170, 255, 0.5019607843);
+  backdrop-filter: blur(30px);
+  background-color: rgba(30, 30, 30, 0.2);
+  width: 800px;
+  height: 300px;
+  position: relative;
+}
+main section.form-upload .upload h3.btn-convert {
+  cursor: pointer;
+  background-color: #00a9ff;
+  color: #f7f7f7;
+  font-weight: 500;
+  font-size: 1em;
+  padding: 15px 35px;
+  border-radius: 5px;
+  margin-bottom: -25px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
 }/*# sourceMappingURL=main.css.map */
