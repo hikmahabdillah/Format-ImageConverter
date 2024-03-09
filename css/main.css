@@ -16,7 +16,7 @@ body {
 
 header {
   color: #faf7f7;
-  padding: 10px 30px;
+  padding: 10px 25px;
 }
 header nav {
   display: flex;
@@ -47,4 +47,27 @@ header nav .services h2:last-child {
   background: rgb(0, 169, 255);
   background: linear-gradient(120deg, rgb(0, 169, 255) 0%, rgb(0, 25, 37) 100%);
   border-radius: 8px;
+}
+
+main section.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+}
+main section.content h1 {
+  font-size: 3em;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(0, 169, 255) 0%, rgb(137, 207, 243) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+main section.content p {
+  max-width: 350px;
+  font-weight: 500;
+  color: #c3c3c3;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,30 @@
+@mixin content {
+  main {
+    section.content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+      align-items: center;
+      margin-top: 50px;
+      h1 {
+        font-size: 3em;
+        font-weight: 700;
+        background: linear-gradient(
+          to right,
+          rgba(0, 169, 255, 1) 0%,
+          rgba(137, 207, 243, 1) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      p {
+        max-width: 350px;
+        font-weight: 500;
+        color: #c3c3c3;
+        opacity: 0.5;
+      }
+    }
+  }
+}
