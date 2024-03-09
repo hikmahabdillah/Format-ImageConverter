@@ -1,3 +1,6 @@
+@use "header";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,5 +15,11 @@ body {
     rgb(0, 42, 59) 45%,
     rgba(0, 92, 139, 1) 100%
   );
+  background-repeat: no-repeat;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
   height: 100vh;
 }
+
+// style for header
+@include header.header();

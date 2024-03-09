@@ -1,0 +1,40 @@
+@mixin header {
+  header {
+    color: #faf7f7;
+    padding: 10px 30px;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        h1 {
+          font-size: 1.5em;
+          font-weight: 500;
+        }
+      }
+      .services {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        h2 {
+          font-size: 1em;
+          font-weight: 400;
+          &:last-child {
+            font-weight: 500;
+            padding: 15px 35px;
+            background: rgb(0, 169, 255);
+            background: linear-gradient(
+              120deg,
+              rgba(0, 169, 255, 1) 0%,
+              rgba(0, 25, 37, 1) 100%
+            );
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}
