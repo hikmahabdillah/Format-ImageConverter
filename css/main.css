@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: rgb(0, 25, 37);
+  background: linear-gradient(180deg, rgb(0, 25, 37) 0%, rgb(0, 42, 59) 45%, rgb(0, 92, 139) 100%);
+  height: 100vh;
+}/*# sourceMappingURL=main.css.map */
