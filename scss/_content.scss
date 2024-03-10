@@ -31,15 +31,57 @@
     }
     section.form-upload {
       margin-top: 50px;
+      display: flex;
+      justify-content: center;
       .upload {
         border-radius: 40px;
         border: 3px solid #00a9ff;
         box-shadow: 0 0 50px #00aaff80;
         backdrop-filter: blur(30px);
         background-color: #1e1e1e33;
-        width: 800px;
-        height: 300px;
-        position: relative;
+        width: 100%;
+        padding: 40px;
+        .dropzone-box {
+          border-radius: 20px;
+          border: 3px dotted #00a9ff;
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          align-content: center;
+          gap: 4px;
+          color: #c4c4c4;
+          img {
+            margin-bottom: 3px;
+          }
+          span.barrier {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            hr {
+              // height: 1px;
+              width: 100%;
+              background-color: #c6c5c528;
+              border: 0.5px solid #c6c5c527;
+            }
+          }
+          input[type="file"] {
+            display: none;
+          }
+          label {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            gap: 5px;
+            border-radius: 5px;
+            background-color: #00a9ff;
+            cursor: pointer;
+            font-size: 0.9em;
+            color: #f7f7f7;
+          }
+        }
         h3.btn-convert {
           cursor: pointer;
           background-color: #00a9ff;
@@ -51,7 +93,7 @@
           margin-bottom: -25px;
           position: absolute;
           bottom: 0;
-          left: calc(50% - 100px);
+          transform: translateX(25%);
         }
       }
     }
