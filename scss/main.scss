@@ -1,5 +1,6 @@
 @use "header";
 @use "content";
+@use "convert";
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
@@ -26,3 +27,6 @@ body {
 
 // style for content
 @include content.content();
+
+// style for convert section
+@include convert.convert();

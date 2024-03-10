@@ -1,0 +1,48 @@
+@mixin convert {
+  main {
+    section.form-upload {
+      .convert-zone {
+        margin-top: 20px;
+        display: grid;
+        grid-template-areas:
+          "statusFile formatImage"
+          "fileName fileName";
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        color: #f7f7f7;
+        font-size: 0.9em;
+        // border: 2px solid white;
+        & p.status-file {
+          grid-area: statusFile;
+        }
+        span.convert-file {
+          grid-area: formatImage;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+        ul.list-file {
+          grid-area: fileName;
+          list-style: none;
+          li {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #00aaff5e;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            span.detail-file {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
