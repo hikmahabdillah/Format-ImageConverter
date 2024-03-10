@@ -16,12 +16,30 @@
         // border: 2px solid white;
         & p.status-file {
           grid-area: statusFile;
+          margin-left: 5px;
         }
         span.convert-file {
           grid-area: formatImage;
           display: flex;
           gap: 10px;
           align-items: center;
+          margin-right: 5px;
+          select#format-image {
+            border: 3px solid #00a9ff;
+            border-radius: 10px;
+            background-color: #005c8b;
+            color: #f7f7f7;
+            width: 100px;
+            padding: 10px;
+            &:focus {
+              outline: none;
+            }
+            option {
+              padding: 10px;
+              background-color: #fff;
+              color: #333;
+            }
+          }
         }
         ul.list-file {
           grid-area: fileName;
