@@ -25,12 +25,18 @@
           align-items: center;
           margin-right: 5px;
           select#format-image {
+            cursor: pointer;
             border: 3px solid #00a9ff;
             border-radius: 10px;
             background-color: #005c8b;
             color: #f7f7f7;
             width: 100px;
             padding: 10px;
+            transition: 0.5s;
+            &:hover {
+              transform: scale(1.05);
+              background-color: #013c5a;
+            }
             &:focus {
               outline: none;
             }
@@ -72,7 +78,7 @@
     p {
       color: #f7f7f7;
       span {
-        color: #00a9ff;
+        color: #00ccff;
       }
     }
   }

@@ -23,7 +23,16 @@
         h2 {
           font-size: 1em;
           font-weight: 400;
+          cursor: pointer;
+          transition: 0.5s;
+          padding-bottom: 3px;
+          border-bottom: 1px solid #faf7f700;
+          &:hover {
+            transform: scale(1.05);
+            border-bottom: 1px solid #faf7f7;
+          }
           &:last-child {
+            cursor: pointer;
             font-weight: 500;
             padding: 15px 35px;
             background: rgb(0, 169, 255);
