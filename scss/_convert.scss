@@ -63,4 +63,17 @@
       }
     }
   }
+  footer {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    p {
+      color: #f7f7f7;
+      span {
+        color: #00a9ff;
+      }
+    }
+  }
 }

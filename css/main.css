@@ -19,6 +19,7 @@ header {
 }
 header nav {
   display: flex;
+  transform: none;
   justify-content: space-between;
   align-items: center;
 }
@@ -202,4 +203,18 @@ main section.form-upload .convert-zone ul.list-file li span.detail-file {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+
+footer {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+footer p {
+  color: #f7f7f7;
+}
+footer p span {
+  color: #00a9ff;
 }/*# sourceMappingURL=main.css.map */
