@@ -30,9 +30,10 @@
       }
     }
     section.form-upload {
-      margin-top: 50px;
+      margin-top: 40px;
       display: flex;
       justify-content: center;
+      width: clamp(300px, 100%, 800px);
       .upload {
         border-radius: 40px;
         border: 3px solid #00a9ff;
@@ -57,11 +58,12 @@
           span.barrier {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 10px;
             width: 100%;
             hr {
               // height: 1px;
-              width: 100%;
+              width: clamp(50px, 100%, 90px);
               background-color: #c6c5c528;
               border: 0.5px solid #c6c5c527;
             }
@@ -93,7 +95,8 @@
           margin-bottom: -25px;
           position: absolute;
           bottom: 0;
-          transform: translateX(25%);
+          left: 50%;
+          transform: translateX(-50%);
         }
       }
     }
