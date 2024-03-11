@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let numOfFiles = document.getElementById("status-file");
   let fileList = document.getElementById("list-file");
 
-  inputFile.addEventListener("change", () => {
+  // FUNCTION UPLOADING FILE
+  const uploadingFile = () => {
     fileList.innerHTML = "";
     numOfFiles.textContent = `${inputFile.files.length} Files selected`;
 
@@ -33,5 +34,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
       fileList.appendChild(listItem);
     }
+  };
+
+  // INPUT FILE CHOOSEN
+  inputFile.addEventListener("change", uploadingFile);
+
+  //  DROPZONE AREA EVENT
+  dropArea.addEventListener("dragover", (e) => {
+    e.preventDefault();
+  });
+  dropArea.addEventListener("drop", (e) => {
+    e.preventDefault();
+    inputFile.files = e.dataTransfer.files;
+    uploadingFile();
   });
 });
