@@ -20,6 +20,9 @@ body {
   background-repeat: no-repeat;
   padding: 20px;
   font-family: "Inter", sans-serif;
+  .container {
+    transform: none;
+  }
 }
 
 // style for header
