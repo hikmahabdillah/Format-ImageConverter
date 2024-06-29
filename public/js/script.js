@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const formConvert = document.getElementById("convert-file");
   const dropArea = document.getElementById("dropzone-box");
   const inputFile = document.getElementById("upload-files");
   let numOfFiles = document.getElementById("status-file");
@@ -62,5 +63,14 @@ document.addEventListener("DOMContentLoaded", () => {
     inputFile.files = e.dataTransfer.files;
     uploadingFile();
     console.log(uploadingFile());
+  });
+  // EVENT WHEN USER AFTER SUBMIT THE FORM
+  formConvert.addEventListener("submit", (e) => {
+    // Mengosongkan nilai select
+    convertTo.selectedIndex = 0;
+    // Menyimpan pesan 'No files selected'
+    numOfFiles.textContent = "No files selected";
+    fileList.innerHTML = "";
+    form.reset();
   });
 });

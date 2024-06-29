@@ -3,10 +3,6 @@
     color: #faf7f7;
     padding: 10px 25px;
     nav {
-      display: flex;
-      transform: none;
-      justify-content: space-between;
-      align-items: center;
       .logo {
         display: flex;
         align-items: center;
@@ -14,35 +10,6 @@
         h1 {
           font-size: 1.5em;
           font-weight: 500;
-        }
-      }
-      .services {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        h2 {
-          font-size: 1em;
-          font-weight: 400;
-          cursor: pointer;
-          transition: 0.5s;
-          padding-bottom: 3px;
-          border-bottom: 1px solid #faf7f700;
-          &:hover {
-            transform: scale(1.05);
-            border-bottom: 1px solid #faf7f7;
-          }
-          &:last-child {
-            cursor: pointer;
-            font-weight: 500;
-            padding: 15px 35px;
-            background: rgb(0, 169, 255);
-            background: linear-gradient(
-              120deg,
-              rgba(0, 169, 255, 1) 0%,
-              rgba(0, 25, 37, 1) 100%
-            );
-            border-radius: 8px;
-          }
         }
       }
     }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AldImage | Format Image Converter</title>
+    <title>AldPicConvert | Format Image Converter</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -17,11 +17,7 @@
               id="logo"
               width="50px"
             />
-            <h1>AldImage</h1>
-          </div>
-          <div class="services">
-            <h2>How It's Work?</h2>
-            <h2>About</h2>
+            <h1>AldPicConvert</h1>
           </div>
         </nav>
       </header>
@@ -38,6 +34,7 @@
           <!-- UPLOAD FILE ZONE -->
           <div class="upload">
             <form
+              id="convert-file"
               class="dropzone-area"
               method="post"
               action="/convert"
@@ -86,7 +83,7 @@
                 </li> -->
                 </ul>
                 <button type="submit">
-                  <h3 class="btn-convert" id="btn-convert">Convert Image</h3>
+                  <h3 class="btn-convert">Convert Image</h3>
                 </button>
               </div>
             </form>
@@ -94,7 +91,16 @@
         </section>
       </main>
       <footer>
-        <p>Built & Design By <span> Hikmah Aldrin </span></p>
+        <p>
+          Built & Design By
+          <span
+            ><a
+              href="https://github.com/hikmahabdillah/Format-ImageConverter"
+              target="_blank"
+              >Hikmah Aldrin
+            </a></span
+          >
+        </p>
       </footer>
     </div>
     <script src="./js/script.js"></script>
