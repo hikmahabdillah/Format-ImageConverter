@@ -1,11 +1,13 @@
 const express = require("express");
+const app = express();
+const cors = require("cors");
+app.use(cors());
 const multer = require("multer");
 const sharp = require("sharp");
 const archiver = require("archiver");
 const path = require("path");
 const fs = require("fs");
 
-const app = express();
 const port = 3000;
 
 // ACCESS TO ASSETS FOR PUBLIC
