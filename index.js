@@ -1,7 +1,13 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-app.use(cors());
+const corsConfig = {
+  origin: "*",
+  credential: true,
+  methods: ["GET", "POST"],
+};
+app.options("", cors(corsConfig));
+app.use(cors(corsConfig));
 const multer = require("multer");
 const sharp = require("sharp");
 const archiver = require("archiver");
@@ -54,7 +60,7 @@ app.post("/convert", upload.array("upload-files", 10), async (req, res) => {
         path.parse(file.originalname).name
       }.${formatImage}`;
 
-      await sharp(filePath).toFormat(formatImage).toFile(outputFilePath);
+      sharp(filePath).toFormat(formatImage).toFile(outputFilePath);
 
       convertedFiles.push(outputFilePath);
 
@@ -117,4 +123,4 @@ app.listen(port, () => {
   console.log(`Server berjalan di http://localhost:${port}`);
 });
 
-module.exports = app;
+// module.exports = app;
