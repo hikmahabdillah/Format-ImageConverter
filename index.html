@@ -37,7 +37,12 @@
         <section class="form-upload">
           <!-- UPLOAD FILE ZONE -->
           <div class="upload">
-            <form class="dropzone-area">
+            <form
+              class="dropzone-area"
+              method="post"
+              action="/convert"
+              enctype="multipart/form-data"
+            >
               <div class="dropzone-box" id="dropzone-box">
                 <img src="./img/Upload to Cloud.png" alt="" width="60px" />
                 <p>Drop file here</p>
@@ -49,41 +54,42 @@
                 <input
                   type="file"
                   required
-                  name="upload-file"
-                  id="upload-file"
+                  name="upload-files"
+                  id="upload-files"
                   multiple
                 />
-                <label for="upload-file">
+                <label for="upload-files">
                   <img src="./img/Upload File.png" alt="" />
                   Choose Files To Upload
                 </label>
               </div>
-            </form>
-            <div class="convert-zone">
-              <p class="status-file" id="status-file">No files selected</p>
-              <span class="convert-file">
-                <label for="format-image">Convert To :</label>
-                <select name="format-image" id="format-image">
-                  <option value="webp">WEBP</option>
-                  <option value="avif">AVIF</option>
-                  <option value="tiff">TIFF</option>
-                  <option value="jpeg">JPEG</option>
-                  <option value="png">PNG</option>
-                  <option value="jpg">JPG</option>
-                  <option value="svg">SVG</option>
-                </select>
-              </span>
-              <ul class="list-file" id="list-file">
-                <!-- <li>
+              <div class="convert-zone">
+                <p class="status-file" id="status-file">No files selected</p>
+                <span class="convert-file">
+                  <label for="format-image">Convert To :</label>
+                  <select name="formatImage" id="format-image">
+                    <option value="webp">WEBP</option>
+                    <option value="avif">AVIF</option>
+                    <option value="tiff">TIFF</option>
+                    <option value="jpeg">JPEG</option>
+                    <option value="png">PNG</option>
+                    <option value="jpg">JPG</option>
+                  </select>
+                </span>
+                <ul class="list-file" id="list-file">
+                  <!-- <li>
                   <span class="detail-file">
                     <img src="./img/File.png" alt="File Icon" />
                     <p class="file-name">Logo Ald.Png</p>
                   </span>
                   <p class="file-size">920 Kb</p>
                 </li> -->
-              </ul>
-              <h3 class="btn-convert">Convert Image</h3>
-            </div>
+                </ul>
+                <button type="submit">
+                  <h3 class="btn-convert" id="btn-convert">Convert Image</h3>
+                </button>
+              </div>
+            </form>
           </div>
         </section>
       </main>
