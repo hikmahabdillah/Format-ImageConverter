@@ -114,3 +114,5 @@ app.post("/convert", upload.array("upload-files", 10), async (req, res) => {
 app.listen(port, () => {
   console.log(`Server berjalan di http://localhost:${port}`);
 });
+
+module.exports = app;
