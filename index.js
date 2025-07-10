@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views/index.html"));
 });
 
-app.post("/convert", upload.array("upload-files", 10), async (req, res) => {
+app.post("/convert", upload.array("upload-files", 60), async (req, res) => {
   try {
     const files = req.files;
 
